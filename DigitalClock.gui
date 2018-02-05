@@ -10,10 +10,6 @@
     <autoposition />
     <imagefolder>images</imagefolder>
     <debug loaderrors="0" connectionerrors="0" />
-    <devices>
-      <device name="iPad_One">32AF0F837B46EA10F635F9EC534CC6DA</device>
-      <device name="brooks iPad">485D538E7D7785D49900BB3C4A2F7740</device>
-    </devices>
   </properties>
   <themes>
     <theme type="text" name=".text"><![CDATA[ color: #FF0000; font-size: 20px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
