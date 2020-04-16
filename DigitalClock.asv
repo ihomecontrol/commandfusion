@@ -1,0 +1,68 @@
+<gui>
+  <properties>
+    <project>Digital Clock</project>
+    <designer>Roman V. Brooks</designer>
+    <size autoposition="scale">
+      <portrait width="768" height="1024" />
+      <landscape width="1024" height="768" />
+    </size>
+    <autoposition />
+    <imagefolder>images</imagefolder>
+    <debug loaderrors="0" connectionerrors="0" />
+  </properties>
+  <themes>
+    <theme type="text" name=".text"><![CDATA[ color: #FF0000; font-size: 20px; font-family: 'Arial'; text-align: left; vertical-align: top; font-weight: normal; font-style: none; text-decoration: none; display: table-cell;]]></theme>
+    <theme type="background" name=".nightDimmer"><![CDATA[ background-image: url(nightDimmer.png); background-repeat: no-repeat;]]></theme>
+    <theme type="button" name=".fullScreenBtn[state='0']"><![CDATA[padding: 0px 0px 0px 0px; color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".fullScreenBtn[state='1']"><![CDATA[padding: 0px 0px 0px 0px; color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="gauge" name=".moscow_traffic[state='0']"><![CDATA[ background-image: url(traffic_off.png);]]></theme>
+    <theme type="gauge" name=".moscow_traffic[state='1']"><![CDATA[ background-image: url(traffic_on.png);]]></theme>
+    <theme type="button" name=".weather_ico[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(na.png); color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".weather_ico[state='1']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(na.png); color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".Refresh[state='0']"><![CDATA[padding: 0px 0px 0px 0px; background-image: url(na.png); color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+    <theme type="button" name=".Refresh[state='1']"><![CDATA[padding: 0px 0px 0px 0px; color: #FFFFFF; font-size: 12px; font-family: 'Verdana'; font-weight: normal; font-style: none; text-decoration: none; text-align: center; vertical-align: middle; display: table-cell; box-sizing: border-box; -webkit-box-sizing: border-box; -webkit-tap-highlight-color:rgba(0,0,0,0);]]></theme>
+  </themes>
+  <scripts>
+    <script name="main.js" />
+  </scripts>
+  <page name="iHomeControl" folder="" j="100" tags="" transition="None" subtype="None" time="0" ease="">
+    <portrait t="nightDimmer" />
+    <landscape>
+      <txt j="0" x="314" y="372" w="395" h="25" t="text" wrap="False" l="0" tags="">This is your startup page with some controls</txt>
+      <btn j="0" x="144" y="242" w="735" h="284" t="fullScreenBtn" flip="None" sim="1" l="0" s="1" tags="" js="CF.setJoins([{join:&quot;d100&quot;, value:0},{join:&quot;d200&quot;, value:1}]);">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+  <page name="dClock" folder="" j="200" tags="" transition="None" subtype="None" time="0" ease="" start="1">
+    <portrait />
+    <landscape>
+      <img x="80" y="210" w="50" h="50" j="999" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">na.png</img>
+      <img x="79" y="210" w="866" h="349" j="0" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">Default.png</img>
+      <img x="80" y="259" w="165" h="226" j="1000" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">2.png</img>
+      <img x="205" y="259" w="165" h="226" j="1001" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">3.png</img>
+      <img x="617" y="289" w="80" h="196" j="0" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">dotred.png</img>
+      <img x="368" y="259" w="165" h="226" j="1002" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">0.png</img>
+      <img x="494" y="259" w="165" h="226" j="1003" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">6.png</img>
+      <img x="328" y="288" w="80" h="196" j="0" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">dotred.png</img>
+      <img x="656" y="259" w="165" h="226" j="1004" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">6.png</img>
+      <img x="782" y="259" w="165" h="226" j="1005" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">8.png</img>
+      <img x="192" y="505" w="615" h="46" j="0" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">back.png</img>
+      <img x="193" y="505" w="615" h="46" j="1010" clickthrough="0" refresh="0" l="1" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">Sunday.png</img>
+      <txt j="2000" x="62" y="13" w="700" h="25" t="text" wrap="False" l="0" tags="">Дорогая моя Столица, золотая моя Москва</txt>
+      <txt j="2001" x="215" y="220" w="670" h="30" t="text" wrap="False" l="0" tags="">Холодно, как в космосе</txt>
+      <txt j="2002" x="800" y="13" w="217" h="25" t="text" wrap="False" l="1" tags="">Давление</txt>
+      <txt j="2003" x="150" y="220" w="50" h="30" t="text" wrap="False" l="1" tags="">-99.9</txt>
+      <gauge j="10" x="223" y="490" w="578" h="5" t="moscow_traffic" l="0" tags="" />
+      <btn j="0" x="0" y="0" w="1024" h="768" t="fullScreenBtn" flip="None" sim="0" l="1" s="1" tags="" js="CF.setJoins([{join:&quot;d100&quot;, value:1},{join:&quot;d200&quot;, value:0}]);">
+        <inactive s="0">
+        </inactive>
+        <active s="0">
+        </active>
+      </btn>
+    </landscape>
+  </page>
+</gui>
