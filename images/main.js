@@ -78,11 +78,11 @@ var Weather = function(url) {
                 self.weatherType = xmlDoc.getElementsByTagName("weather_type")[0];
                 CF.setJoin("s2001", self.weatherType.textContent);
                 self.dayTime = xmlDoc.getElementsByTagName("daytime")[0];
-                // if (self.dayTime.textContent == 'n') {
-                //     CF.setJoin("d100", 1);
-                // } else {
-                //     CF.setJoin("d100", 0);
-                // }
+                 if (self.dayTime.textContent == 'n') {
+                     CF.setJoin("d100", 1);
+                 } else {
+                     CF.setJoin("d100", 0);
+                 }
                 self.aPressure = xmlDoc.getElementsByTagName("pressure")[0];
                 CF.setJoin("s2002", self.aPressure.textContent + " ммртст");
                 self.currentTemp = xmlDoc.getElementsByTagName("temperature")[0];
