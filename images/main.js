@@ -79,12 +79,12 @@ var Weather = function(url) {
                 CF.setJoin("s2001", self.weatherType.textContent);
                 self.dayTime = xmlDoc.getElementsByTagName("daytime")[0];
                  if (self.dayTime.textContent == 'n') {
-                     CF.setJoin("d100", 1);
+                     CF.setJoin("d201", 1);
                  } else {
-                     CF.setJoin("d100", 0);
+                     CF.setJoin("d201", 0);
                  }
                 self.aPressure = xmlDoc.getElementsByTagName("pressure")[0];
-                CF.setJoin("s2002", self.aPressure.textContent + " ммртст");
+                CF.setJoin("s2002", self.aPressure.textContent + " mm Hg");
                 self.currentTemp = xmlDoc.getElementsByTagName("temperature")[0];
                 CF.setJoin("s2003", self.currentTemp.textContent + "°C");
                 self.wImage = xmlDoc.getElementsByTagName("weather_code")[0];
