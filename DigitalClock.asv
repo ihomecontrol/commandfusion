@@ -61,13 +61,13 @@
       <txt j="2003" x="150" y="220" w="50" h="30" t="text" wrap="False" l="1" tags="">-99.9</txt>
       <gauge j="10" x="223" y="490" w="578" h="5" t="moscow_traffic" l="0" tags="" />
       <img x="79" y="212" w="50" h="50" j="999" clickthrough="0" refresh="0" l="0" noCache="0" downloadIndicator="0" clearOnURLChange="0" tags="">na.png</img>
-      <btn j="0" x="924" y="668" w="100" h="100" t="Refresh" overrideFontAlignmentH="center" overrideFontAlignmentV="center" flip="None" sim="0" l="0" s="1" tags="" js="yaweather();">
+      <btn j="0" x="0" y="0" w="1024" h="768" t="fullScreenBtn" overrideFontAlignmentH="center" overrideFontAlignmentV="center" flip="None" sim="0" l="0" s="1" tags="" js="CF.setJoins([{join:&quot;d100&quot;, value:1},{join:&quot;d200&quot;, value:0}]);">
         <inactive s="0">
         </inactive>
         <active s="0">
         </active>
       </btn>
-      <btn j="0" x="0" y="0" w="1024" h="674" t="fullScreenBtn" overrideFontAlignmentH="center" overrideFontAlignmentV="center" flip="None" sim="0" l="0" s="1" tags="" js="CF.setJoins([{join:&quot;d100&quot;, value:1},{join:&quot;d200&quot;, value:0}]);">
+      <btn j="0" x="924" y="668" w="100" h="100" t="Refresh" overrideFontAlignmentH="center" overrideFontAlignmentV="center" flip="None" sim="0" l="0" s="1" tags="" js="yaweather();">
         <inactive s="0">
         </inactive>
         <active s="0">
